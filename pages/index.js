@@ -9,16 +9,16 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <header className="flex">
+      <header className="flex w-full p-5 justify-between">
 
       {/* Left */}
-      <div className="flex">
+      <div className="flex space-x-4 items-center">
         <p>Gmail</p>
         <p>Images</p>
       </div>
 
       {/* Right */}
-      <div className="flex">
+      <div className="flex space-x-4 items-center">
         <p>Gmail</p>
         <p>Images</p>
       </div>
