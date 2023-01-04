@@ -18,14 +18,16 @@ export default function SearchHeader() {
   return (
     <header className="sticky top-0 bg-white">
       <div className="flex w-full p-6 items-center">
-        <Image
-          onClick={() => router.push("/")}
-          width="120"
-          height="40"
-          className="cursor-pointer"
-          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-          alt="sad face google logo"
-        />
+        <html onClick={() => router.push("/")}>
+          <Image
+            width="120"
+            height="40"
+            className="cursor-pointer"
+            src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+            alt="sad face google logo"
+          />
+        </html>
+        
         <form className="flex border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-10 mr-5 flex-grow max-w-3xl items-center">
           <input
             type="text"
