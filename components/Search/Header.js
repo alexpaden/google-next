@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/solid";
-import SearchHeaderOptions from "./SearchHeaderOptions";
+import HeaderOptions from "./HeaderOptions";
 
 export default function SearchHeader() {
 
@@ -42,7 +42,7 @@ export default function SearchHeader() {
           <button onClick={search} type="submit" hidden></button>
         </form>
       </div>
-      <SearchHeaderOptions />
+      <HeaderOptions />
     </header>
   );
 }

@@ -1,8 +1,8 @@
 import Head from "next/head";
-import SearchHeader from "../components/SearchHeader";
-import SearchResults from "../components/SearchResults";
+import SearchHeader from "../components/Search/Header";
+import SearchResults from "../components/Search/Results";
 import { useRouter } from "next/router";
-import ImageResults from "../components/ImageResults";
+import ImageResults from "../components/Search/ImageResults";
 
 export default function Search({ results }) {
   const router = useRouter();
