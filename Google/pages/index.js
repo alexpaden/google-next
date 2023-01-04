@@ -1,13 +1,12 @@
-import Head from 'next/head'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Head from "next/head";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { SearchIcon, MicrophoneIcon } from "@heroicons/react/solid";
-import Image from 'next/image'
-import { useRef } from 'react'
-import { useRouter } from 'next/router'
+import Image from "next/image";
+import { useRef } from "react";
+import { useRouter } from "next/router";
 
 export default function Home() {
-
   const router = useRouter();
   const searchInputRef = useRef(null);
 
@@ -31,7 +30,10 @@ export default function Home() {
     <div>
       <Head>
         <title>Google Next Clone</title>
-        <meta name="description" content="A clone of google search using nextjs, tailwind, custom search api" />
+        <meta
+          name="description"
+          content="A clone of google search using nextjs, tailwind, custom search api"
+        />
       </Head>
 
       {/* Header */}

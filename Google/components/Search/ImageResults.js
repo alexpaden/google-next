@@ -15,10 +15,16 @@ export default function ImageResults({ results }) {
                   alt={result.title}
                 />
               </a>
-              <a className="group-hover:underline" href={result.image.contextLink}>
+              <a
+                className="group-hover:underline"
+                href={result.image.contextLink}
+              >
                 <h2 className="truncate text-xl">{result.title}</h2>
               </a>
-              <a className="group-hover:underline" href={result.image.contextLink}>
+              <a
+                className="group-hover:underline"
+                href={result.image.contextLink}
+              >
                 <p className="text-gray-600">{result.displayLink}</p>
               </a>
             </div>
@@ -26,7 +32,7 @@ export default function ImageResults({ results }) {
         ))}
       </div>
       <div className="ml-16">
-          <PaginationButtons/>
+        <PaginationButtons />
       </div>
     </div>
   );

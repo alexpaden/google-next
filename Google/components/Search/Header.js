@@ -5,10 +5,9 @@ import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/solid";
 import HeaderOptions from "./HeaderOptions";
 
 export default function SearchHeader() {
-
   const router = useRouter();
   const searchInputRef = useRef(null);
-  
+
   function search(event) {
     event.preventDefault();
     const term = searchInputRef.current.value;

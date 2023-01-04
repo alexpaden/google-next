@@ -1,20 +1,19 @@
-import { ViewGridIcon } from '@heroicons/react/solid'
-import Avatar from './Avatar'
+import { ViewGridIcon } from "@heroicons/react/solid";
+import Avatar from "./Avatar";
 
 export default function Header() {
-    return (
-        <header className="flex w-full p-5 justify-between">
+  return (
+    <header className="flex w-full p-5 justify-between">
+      {/* Left */}
 
-        {/* Left */}
-
-        <div className="flex space-x-4 items-center">
+      <div className="flex space-x-4 items-center">
         <p className="link">About</p>
         <p className="link">Store</p>
-        </div>
+      </div>
 
-        {/* Right */}
+      {/* Right */}
 
-        <div className="flex space-x-4 items-center">
+      <div className="flex space-x-4 items-center">
         <p className="link">Gmail</p>
         <p className="link">Images</p>
 
@@ -25,7 +24,7 @@ export default function Header() {
         {/* Avatar */}
 
         <Avatar url="https://links.papareact.com/5me" />
-        </div>
-        </header>
-    );
-} 
+      </div>
+    </header>
+  );
+}
