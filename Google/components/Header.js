@@ -1,5 +1,5 @@
 import { ViewGridIcon } from "@heroicons/react/solid";
-import Avatar from "./Avatar";
+import User from "./User";
 
 export default function Header() {
   return (
@@ -21,9 +21,9 @@ export default function Header() {
 
         <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
 
-        {/* Avatar */}
+        {/* User */}
 
-        <Avatar url="https://links.papareact.com/5me" />
+        <User />
       </div>
     </header>
   );
