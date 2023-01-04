@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/solid";
+import User from "../User";
 import HeaderOptions from "./HeaderOptions";
 
 export default function SearchHeader() {
@@ -27,8 +28,8 @@ export default function SearchHeader() {
             alt="sad face google logo"
           />
         </html>
-        
-        <form className="flex border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-10 mr-5 flex-grow max-w-3xl items-center">
+
+        <form className="flex border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-10 mr-auto flex-grow max-w-3xl items-center">
           <input
             type="text"
             defaultValue={router.query.term}
@@ -43,6 +44,7 @@ export default function SearchHeader() {
           <SearchIcon className="h-6 hidden sm:inline-flex text-blue-500" />
           <button onClick={search} type="submit" hidden></button>
         </form>
+        <User className="ml-auto whitespace-nowrap right" />
       </div>
       <HeaderOptions />
     </header>
