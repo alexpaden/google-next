@@ -1,9 +1,12 @@
-View Live Demo [https://google-next-alexpaden.vercel.app/](https://google-next-alexpaden.vercel.app/).
-Tutorial on NVM for mac (node version manager) [https://tecadmin.net/install-nvm-macos-with-homebrew/](https://tecadmin.net/install-nvm-macos-with-homebrew/)
-The URL location to retrieve necessary API keys are saved in the .env.example file [https://github.com/alexpaden/google-next/blob/main/Google/.env.example](https://github.com/alexpaden/google-next/blob/main/Google/.env.example)
+# Google Clone with Custom Search and OAuth 2
+## With Next.js and tailwindcss
+
+- View Live Demo [google-next-alexpaden.vercel.app/](https://google-next-alexpaden.vercel.app/).
+- Tutorial on NVM for mac (node version manager) [install-nvm-macos-with-homebrew/](https://tecadmin.net/install-nvm-macos-with-homebrew/)
+- The URL location to retrieve necessary API keys are saved in the .env.example file [=.env.example](https://github.com/alexpaden/google-next/blob/main/Google/.env.example)
 
 
-## Getting Started
+# Getting Started
 
 First, run the development server:
 
@@ -11,9 +14,7 @@ Clone the repository from
 [https://github.com/alexpaden/google-next.git](https://github.com/alexpaden/google-next)
 
 
-# Change Directory to /Google from inside google-next
-
-# Run local dev environment 
+## Run local dev environment 
 ```bash
 cd Google
 cp .env.example .env
@@ -26,7 +27,7 @@ yarn dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# Run from Dockerfile
+## Run from Dockerfile
 ```bash
 cd Google
 cp .env.example .env (or via cloud host)
@@ -39,7 +40,7 @@ docker run -p 3000:3000 google-next
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# Deploy on Vercel.com [https://vercel.com/](https://vercel.com/)
+## Deploy on [https://vercel.com/](https://vercel.com/)
 ```bash
 clone repository
 deploy to vercel
@@ -51,7 +52,7 @@ add oauth "custom".vercel.app redirect URIs
 
 Open the vercel.app url with your browser to see the result. [https://google-next-alexpaden.vercel.app/](https://google-next-alexpaden.vercel.app/).
 
-## Learn More
+# Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
