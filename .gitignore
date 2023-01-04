@@ -37,4 +37,11 @@ jspm_packages
 .node_repl_history
 .next
 .DS_Store
-yarn.lock
+
+# dotenv environment variables file
+.env
+
+# tailwind dist
+dist
+
+
