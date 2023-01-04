@@ -44,4 +44,5 @@ jspm_packages
 # tailwind dist
 dist
 
-
+# personal notes
+notes.md

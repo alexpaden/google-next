@@ -6,7 +6,6 @@ function Footer() {
         <p>Copyright &copy; {new Date().getFullYear()} ALEX PADEN</p>
     </footer>
     );
-
 }
 
 export default Footer;
