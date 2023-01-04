@@ -1,22 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+View Live Demo [https://google-next-alexpaden.vercel.app/](https://google-next-alexpaden.vercel.app/).
+Tutorial on NVM for mac (node version manager) [https://tecadmin.net/install-nvm-macos-with-homebrew/](https://tecadmin.net/install-nvm-macos-with-homebrew/)
+The URL location to retrieve necessary API keys are saved in the .env.example file [https://github.com/alexpaden/google-next/blob/main/Google/.env.example](https://github.com/alexpaden/google-next/blob/main/Google/.env.example)
+
 
 ## Getting Started
 
 First, run the development server:
 
+Clone the repository from
+[https://github.com/alexpaden/google-next.git](https://github.com/alexpaden/google-next)
+
+
+# Change Directory to /Google from inside google-next
+
+# Run local dev environment 
 ```bash
+cd Google
+cp .env.example .env
+
++ add google oauth URIs localhost:3000
++ add google oauth redirect URIs localhost:3000/api/auth/callback/google
+
+yarn install
 yarn dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Run from Dockerfile
+```bash
+cd Google
+cp .env.example .env (or via cloud host)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
++ add google oauth URIs localhost:3000
++ add google oauth redirect URIs localhost:3000/api/auth/callback/google
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+docker build -t google-next .
+docker run -p 3000:3000 google-next
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Deploy on Vercel.com [https://vercel.com/](https://vercel.com/)
+```bash
+clone repository
+deploy to vercel
+add api keys
+add oauth "custom".vercel.app URIs
+add oauth "custom".vercel.app redirect URIs 
+"custom".vercel.app/api/auth/callback/google
+```
+
+Open the vercel.app url with your browser to see the result. [https://google-next-alexpaden.vercel.app/](https://google-next-alexpaden.vercel.app/).
 
 ## Learn More
 
@@ -24,11 +57,9 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [CONTEXT_KEY=](https://cse.google.com/cse/create/new)
+- [API_KEY=](https://developers.google.com/custom-search/v1/introduction)
+- [GOOGLE_CLIENT_ID=](https://developers.google.com/identity/protocols/oauth2)
+- [GOOGLE_CLIENT_SECRET=](https://developers.google.com/identity/protocols/oauth2)
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
