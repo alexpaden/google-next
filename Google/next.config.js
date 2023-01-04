@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['www.google.com'],
+    domains: ['www.google.com', 'links.papareact.com'],
   },
 }
 

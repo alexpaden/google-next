@@ -24,6 +24,7 @@ export default function SearchHeader() {
           height="40"
           className="cursor-pointer"
           src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          alt="sad face google logo"
         />
         <form className="flex border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-10 mr-5 flex-grow max-w-3xl items-center">
           <input

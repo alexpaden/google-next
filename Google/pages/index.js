@@ -47,6 +47,7 @@ export default function Home() {
           width="300"
           height="100"
           src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          alt="sad face google logo"
         />
         <div className="flex w-full mt-5 mx-auto max-w-[90%] border border-gary-200 hover:shadow-lg focus-within:shadow-lg px-5 py-3 rounded-full items-center sm:max-w-xl lg:max-w-2xl">
           <SearchIcon className="h-5 text-gray-500 mr-3" />
