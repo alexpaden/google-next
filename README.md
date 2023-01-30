@@ -3,7 +3,7 @@
 
 - View Live Demo [google-next-alexpaden.vercel.app/](https://google-next-alexpaden.vercel.app/).
 - Tutorial on NVM for mac (node version manager) [install-nvm-macos-with-homebrew/](https://tecadmin.net/install-nvm-macos-with-homebrew/)
-- The URL location to retrieve necessary API keys are saved in the .env.example file [=.env.example](https://github.com/alexpaden/google-next/blob/main/Google/.env.example)
+- The URL location to retrieve necessary API keys are saved in the .env.example file [.env.example](https://github.com/alexpaden/google-next/blob/main/Google/.env.example)
 
 
 # Getting Started
